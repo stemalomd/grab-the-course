@@ -442,10 +442,10 @@ def main():
                 print(f"{state} {getTimeStr()}")
                 return state
             else:
-                print(f"addClassProcess返回值錯誤 {getTimeStr()}")
+                print(f"warning:addClassProcess返回值錯誤 {getTimeStr()}")
                 pass
         except:
-            print(f"意外狀況 login或addClassProcess 發生錯誤 {getTimeStr()}")
+            print(f"warning:意外狀況 login或addClassProcess 發生錯誤 {getTimeStr()}")
 
 
 if __name__ == "__main__":
@@ -455,7 +455,7 @@ if __name__ == "__main__":
     )
     driver = None
     info = [
-        {"模式": "加選新", "舊課": "0", "新課": "0123", "狀態": "新的選不到"},  # 舊課程,新課程,舊的選不到,新的選不到
+        {"模式": "加選新", "舊課": "0", "新課": "0123", "狀態": "新的選不到"},
     ]
     clsNum = len(info)
     actionCount = None
@@ -472,10 +472,10 @@ if __name__ == "__main__":
             elif state == "已完成加選":
                 break
             else:
-                print(f"main返回值錯誤 {getTimeStr()}")
+                print(f"warning:main返回值錯誤 {getTimeStr()}")
                 driver.quit()
         except:
-            print(f"main error {getTimeStr()}")
+            print(f"warning:main error {getTimeStr()}")
             if driver:
                 driver.quit()
     driver.quit()
