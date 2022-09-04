@@ -31,6 +31,8 @@
 ## How to use
 
 ### 事前準備
+環境:<br/>
+python 3.10+<br/>
 1. 安裝相依模組<br/>
 `pip3 install -r requirements.txt`<br/>
 2. 安裝Tesseract OCR<br/>
